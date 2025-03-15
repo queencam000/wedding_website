@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background -->
+  <circle cx="200" cy="200" r="190" fill="#e8f5e9"/>
+  
+  <!-- Frog body -->
+  <ellipse cx="200" cy="220" rx="120" ry="100" fill="#4caf50"/>
+  
+  <!-- Frog head -->
+  <circle cx="200" cy="160" r="80" fill="#4caf50"/>
+  
+  <!-- Eyes - white part -->
+  <circle cx="160" cy="120" r="25" fill="white"/>
+  <circle cx="240" cy="120" r="25" fill="white"/>
+  
+  <!-- Eyes - pupils -->
+  <circle cx="160" cy="120" r="12" fill="black"/>
+  <circle cx="240" cy="120" r="12" fill="black"/>
+  
+  <!-- Eye highlights -->
+  <circle cx="155" cy="115" r="5" fill="white"/>
+  <circle cx="235" cy="115" r="5" fill="white"/>
+  
+  <!-- Mouth -->
+  <path d="M 160,180 Q 200,210 240,180" fill="none" stroke="#1b5e20" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Front legs -->
+  <path d="M 120,220 Q 100,270 80,260" fill="none" stroke="#388e3c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 280,220 Q 300,270 320,260" fill="none" stroke="#388e3c" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Back legs -->
+  <path d="M 130,280 Q 100,340 70,330" fill="none" stroke="#388e3c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 270,280 Q 300,340 330,330" fill="none" stroke="#388e3c" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Toe pads -->
+  <circle cx="80" cy="260" r="8" fill="#1b5e20"/>
+  <circle cx="320" cy="260" r="8" fill="#1b5e20"/>
+  <circle cx="70" cy="330" r="10" fill="#1b5e20"/>
+  <circle cx="330" cy="330" r="10" fill="#1b5e20"/>
+  
+  <!-- Spots -->
+  <circle cx="160" cy="230" r="15" fill="#388e3c"/>
+  <circle cx="230" cy="240" r="12" fill="#388e3c"/>
+  <circle cx="190" cy="270" r="10" fill="#388e3c"/>
+  <circle cx="220" cy="190" r="8" fill="#388e3c"/>
+  <circle cx="150" cy="180" r="7" fill="#388e3c"/>
+</svg>

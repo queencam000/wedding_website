@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1b5e20;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.frog-container {
+    margin: 2rem auto;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.frog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.frog-container:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .frog-container {
+        max-width: 200px;
+    }
+}
