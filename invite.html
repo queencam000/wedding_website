@@ -39,19 +39,20 @@
         <p>Save the Date - March 7, 2026</p>
         <p>Enter your address and RSVP:</p>
 
-                    <label for="rsvp">Will you attend?</label>
+        <!-- RSVP dropdown -->
+        <label for="rsvp">Will you attend?</label>
+        <select name="entry.123456789" id="rsvp" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
 
-        <select name="entry.YOUR_RSVP_ID" id="rsvp" required>
-                <option value="">Select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-
-        <form action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="post" target="_blank">
-            <input type="text" name="entry.YOUR_STREET_ID" placeholder="Street Address" required>
-            <input type="text" name="entry.YOUR_CITY_ID" placeholder="City" required>
-            <input type="text" name="entry.YOUR_COUNTRY_ID" placeholder="Country" required>
-            <input type="text" name="entry.YOUR_ZIP_ID" placeholder="Zip Code" required>
+        <!-- Form -->
+        <form action="https://docs.google.com/forms/d/e/1OwTreDzedZWY8RFoyuzb9S0lEhper6qP26eNiOsJTMQ/formResponse" method="post" target="_blank">
+            <input type="text" name="entry.987654321" placeholder="Street Address" required>
+            <input type="text" name="entry.112233445" placeholder="City" required>
+            <input type="text" name="entry.556677889" placeholder="Country" required>
+            <input type="text" name="entry.998877665" placeholder="Zip Code" required>
             
             <button type="submit">Submit</button>
         </form>
