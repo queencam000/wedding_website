@@ -9,8 +9,10 @@
         body {
             text-align: center;
             font-family: "Times New Roman", Times, serif;
-            background: url('hearts_queen.svg') no-repeat center center fixed;
-            background-size: cover;
+            background: url('hearts_queen.svg');
+            background-size: 25%;
+            background-repeat: repeat;
+            background-position: top left;
             color: red;
             cursor: pointer;
             margin: 0;
@@ -19,24 +21,39 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            animation: flipBackground 5s infinite linear;
         }
+
+        /* Flip animation */
+        @keyframes flipBackground {
+            0% { transform: rotateY(0deg); }
+            50% { transform: rotateY(180deg); }
+            100% { transform: rotateY(360deg); }
+        }
+
         .content {
             background: rgba(255, 255, 255, 0.7);
             padding: 20px;
             border-radius: 10px;
         }
-        h1, p {
-            margin: 10px 0;
+
+        h1 {
+            color: yellow; /* Updated text color */
+        }
+
+        .click-text {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body onclick="location.href='invite.html'">
     <div class="content">
-        <p>LOVE LOVE LOVE LOVE LOVE</p>
+        <p>LOVE LOVE LOVE LOVE</p>
         <h1>March 7, 2026!</h1>
         <p>Save the date</p>
+        <p class="click-text">CLICK</p>
     </div>
 </body>
 </html>
-
-
