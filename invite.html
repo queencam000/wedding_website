@@ -5,43 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You Are Invited!</title>
     <style>
-        body {
-            text-align: center;
-            font-family: "Times New Roman", Times, serif;
-            background-color: pink;
-            color: red;
+        /* Basic reset */
+        * {
             margin: 0;
-            height: 100vh;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and overall page layout */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f9f9f9;
+            color: #333;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            margin: 0;
         }
+
         .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
         }
-        input, select, button {
+
+        h1 {
+            color: #ff4d4d;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        label {
             display: block;
-            margin: 10px auto;
-            padding: 10px;
-            width: 80%;
-            max-width: 300px;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
             font-size: 16px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #ff4d4d;
+            box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e04040;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>YOU ARE INVITED TO TASHA & CAMPBELLS WEDDING!</h1>
+        <h1>YOU ARE INVITED TO TASHA & CAMPBELL'S WEDDING!</h1>
         <p>Save the Date - March 7, 2026</p>
         <p>Enter your details and (tentative) RSVP:</p>
 
-         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfYKQA3ucvq8r7nxvZGhLo5YbI2vNbIccfoBOpxua2ioJbQxQ/formResponse" method="post" target="_blank">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfYKQA3ucvq8r7nxvZGhLo5YbI2vNbIccfoBOpxua2ioJbQxQ/formResponse" method="post" target="_blank">
             <!-- RSVP dropdown -->
-            <label for="attending">Do you think you Will you attend?</label>
+            <label for="attending">Do you think you will attend?</label>
             <select name="entry.1886110713" id="attending" required>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -74,9 +128,6 @@
             <!-- Submit button -->
             <button type="submit">Submit</button>
         </form>
-
-        
     </div>
 </body>
 </html>
-
