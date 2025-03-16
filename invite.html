@@ -35,13 +35,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>YOU ARE INVITED!</h1>
+        <h1>YOU ARE INVITED TO TASHA & CAMPBELLS WEDDING!</h1>
         <p>Save the Date - March 7, 2026</p>
-        <p>Enter your details and RSVP:</p>
+        <p>Enter your details and (tentative) RSVP:</p>
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfYKQA3ucvq8r7nxvZGhLo5YbI2vNbIccfoBOpxua2ioJbQxQ/formResponse" method="post" target="_blank">
+         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfYKQA3ucvq8r7nxvZGhLo5YbI2vNbIccfoBOpxua2ioJbQxQ/formResponse" method="post" target="_blank">
             <!-- RSVP dropdown -->
-            <label for="attending">Do you think you will you attend?</label>
+            <label for="attending">Do you think you Will you attend?</label>
             <select name="entry.1886110713" id="attending" required>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -52,7 +52,7 @@
             <input type="text" name="entry.192135882" id="name" placeholder="Your Name" required>
 
             <!-- Address input -->
-            <label for="address">Address (Number & Street):</label>
+            <label for="address">Street Address and Number:</label>
             <input type="text" name="entry.1031562038" id="address" placeholder="Your Address" required>
 
             <!-- City input -->
@@ -63,13 +63,19 @@
             <label for="country">Country:</label>
             <input type="text" name="entry.920409866" id="country" placeholder="Country" required>
 
-            <!-- Zip or Post Code input -->
-            <label for="zip">Zip Code:</label>
+            <!-- Zip Code input -->
+            <label for="zip">Zip or Post Code:</label>
             <input type="text" name="entry.277652948" id="zip" placeholder="Zip Code" required>
+
+            <!-- Comments or Questions -->
+            <label for="comments">Any other comments or questions for us?</label>
+            <textarea name="entry.1456889591" id="comments" placeholder="Your comments..." required></textarea>
 
             <!-- Submit button -->
             <button type="submit">Submit</button>
         </form>
+
+        
     </div>
 </body>
 </html>
