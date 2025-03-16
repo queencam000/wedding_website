@@ -9,10 +9,7 @@
         body {
             text-align: center;
             font-family: "Times New Roman", Times, serif;
-            background: url('hearts_queen.svg');
-            background-size: 25%;
-            background-repeat: repeat;
-            background-position: top left;
+            background: url('QHearts1.svg') no-repeat top center / cover;
             color: red;
             cursor: pointer;
             margin: 0;
@@ -24,27 +21,6 @@
             overflow: hidden;
         }
 
-        /* Rotating Queen of Hearts background */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('hearts_queen.svg');
-            background-size: 25%;
-            background-repeat: repeat;
-            background-position: top left;
-            animation: rotateCards 10s linear infinite;
-            z-index: -1;
-        }
-
-        @keyframes rotateCards {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
         .content {
             background: rgba(255, 255, 255, 0.7);
             padding: 20px;
@@ -53,7 +29,7 @@
 
         h1 {
             color: yellow;
-            background: black; /* Black background for better contrast */
+            background: black;
             padding: 10px;
             border-radius: 5px;
             display: inline-block;
