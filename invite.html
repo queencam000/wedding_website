@@ -48,14 +48,32 @@
         </select>
 
         <!-- Form -->
-        <form action="https://docs.google.com/forms/d/e/1OwTreDzedZWY8RFoyuzb9S0lEhper6qP26eNiOsJTMQ/formResponse" method="post" target="_blank">
-            <input type="text" name="entry.987654321" placeholder="Street Address" required>
-            <input type="text" name="entry.112233445" placeholder="City" required>
-            <input type="text" name="entry.556677889" placeholder="Country" required>
-            <input type="text" name="entry.998877665" placeholder="Zip Code" required>
-            
-            <button type="submit">Submit</button>
-        </form>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfYKQA3ucvq8r7nxvZGhLo5YbI2vNbIccfoBOpxua2ioJbQxQ/formResponse" method="post" target="_blank">
+    <!-- Use the actual entry IDs from your Google Form -->
+    <label for="attending">Will you attend?</label>
+    <select name="entry.1886110713" id="attending" required>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+
+    <label for="rsvp">RSVP?</label>
+    <select name="entry.1031562038" id="rsvp" required>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+
+    <label for="accept">Accepting invitation?</label>
+    <select name="entry.1185548309" id="accept" required>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+
+    <label for="address">Enter your address:</label>
+    <input type="text" name="entry.277652948" id="address" placeholder="Enter your address" required>
+
+    <button type="submit">Submit</button>
+</form>
+
     </div>
 </body>
 </html>
